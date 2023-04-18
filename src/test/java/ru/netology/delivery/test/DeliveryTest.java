@@ -51,6 +51,7 @@ class DeliveryTest {
         $("[data-test-id=success-notification] .notification__content")
                 .shouldHave(exactText("Встреча успешно запланирована на " + secondMeetingDate))
                 .shouldBe(visible);
+
         // TODO: добавить логику теста в рамках которого будет выполнено планирование и перепланирование встречи.
         // Для заполнения полей формы можно использовать пользователя validUser и строки с датами в переменных
         // firstMeetingDate и secondMeetingDate. Можно также вызывать методы generateCity(locale),
